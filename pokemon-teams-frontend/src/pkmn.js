@@ -67,7 +67,6 @@ class Trainer {
       let pkmnId = parseInt(e.target.dataset['pokemonId'])
       this.adapter.releasePkmn(pkmnId)
       this.pokemons = this.pokemons.filter(pkmn => pkmn.id != pkmnId)
-      debugger
       e.target.parentNode.remove(e.target.htmlElement)
       console.log(this.pokemons)
     }
